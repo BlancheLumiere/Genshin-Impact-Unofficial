@@ -1,0 +1,208 @@
+.centered {
+    text-align: center;
+    padding: 1%;
+}
+
+.image {
+    object-fit: fill;
+}
+
+.hr {
+    color: blueviolet;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center; 
+    animation: fadeIn 2s ease-in;
+}
+
+nav {
+    background-color: #641492;
+    text-align: center; 
+    padding: 10px;
+    animation: slideIn 1s ease-out;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; 
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-size: 16px; 
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+.character-info {
+    text-align: center;
+    font-size: 40px;
+    padding-left: 15px;
+    animation: bounceIn 1s ease;
+}
+
+.emilie-wrapper {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-wrapper {
+    text-align: left;
+    width: 50%;
+}
+
+.small {
+    font-size: small;
+    display: block;
+    width: fit-content;
+    background-color: pink;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+h1 {
+    margin: 0;
+    text-align: left;
+}
+
+.emilie-wrapper img {
+    margin-top: 20px;
+    width: 50%;
+}
+
+.section-background {
+    background-image: url('outfit bg.webp');
+    background-position: left -250px center;
+    padding: 1500px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative; 
+}
+
+.text {
+    font-size: large;
+    color: white;
+    margin: 0;
+    position: absolute; 
+    top: 25%; 
+    left: 32%; 
+    transform: translate(-50%, -50%); 
+}
+
+.text {
+    font-size: 25px;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+footer {
+    background-color: blueviolet;
+    padding: 50px;
+    text-align: center; 
+    animation: fadeIn 2s ease-in;
+}
+
+td, th {
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Transparent white border */
+    text-align: center;
+    padding: 12px; /* Increased padding */
+    color: white; /* White text color */
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.6); /* Matte black with transparency */
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
+}
+
+table {
+    margin: 0 auto; 
+    width: 90%; /* Increased table width */
+    border-collapse: collapse; 
+    background-color: rgba(0, 0, 0, 0.4); /* Matte black with transparency */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* To ensure the rounded corners show up */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("hoyoverse background.webp"); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+}
+
+.header-background {
+    background-image: url('genshin header.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100px; 
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.3); opacity: 0; }
+    50% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.image img {
+    animation: zoomIn 1s ease;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(1.05); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
